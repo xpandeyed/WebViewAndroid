@@ -11,6 +11,7 @@ import android.webkit.WebViewClient
 class WebActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar!!.hide()
         setContentView(R.layout.activity_web_actiivity)
         val wbMyWebView = findViewById<WebView>(R.id.wbMyWebView)
         wbMyWebView.webViewClient = WebViewClient()
